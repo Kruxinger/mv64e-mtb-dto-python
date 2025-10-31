@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 from mv64e_dto.claim import Claim
 from mv64e_dto.claim_response import ClaimResponse
 from mv64e_dto.family_member_history import FamilyMemberHistory
-from mv64e_dto.follow_up import FollowUp
+#from mv64e_dto.follow_up import FollowUp
 from mv64e_dto.histology_report import HistologyReport
 from mv64e_dto.mtb_care_plan import MtbCarePlan
 from mv64e_dto.mtb_diagnosis import MtbDiagnosis
@@ -31,7 +31,7 @@ class Mtb(BaseModel):
     diagnoses: Optional[List[MtbDiagnosis]] = Field(default=None, alias="diagnoses")
     episodes_of_care: Optional[List[MtbEpisodeOfCare]] = Field(default=None, alias="episodesOfCare")
     family_member_histories: Optional[List[FamilyMemberHistory]] = Field(default=None, alias="familyMemberHistories") # PLACEHOLDER: List[FamilyMemberHistory]
-    follow_ups: Optional[List[FollowUp]] = Field(default=None, alias="followUps") # PLACEHOLDER: List[FollowUp]
+    #follow_ups: Optional[List[FollowUp]] = Field(default=None, alias="followUps") # PLACEHOLDER: List[FollowUp]
     guideline_procedures: Optional[List[OncoProcedure]] = Field(default=None, alias="guidelineProcedures") # PLACEHOLDER: List[OncoProcedure]
     guideline_therapies: Optional[List[MtbSystemicTherapy]] = Field(default=None, alias="guidelineTherapies") # PLACEHOLDER: List[MtbSystemicTherapy]
     histology_reports: Optional[List[HistologyReport]] = Field(default=None, alias="histologyReports") # PLACEHOLDER: List[HistologyReport]
