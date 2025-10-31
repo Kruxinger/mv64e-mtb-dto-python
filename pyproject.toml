@@ -1,0 +1,20 @@
+[project]
+name = "mv64e-dto"
+version = "0.1.0"
+description = "DTO package for the mv64e ETL processor"
+readme = "README.md"
+authors = [
+  { name = "Dein Name", email = "dein.email@example.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+  "pydantic>=2.0,<3.0"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["mv64e_dto*"]

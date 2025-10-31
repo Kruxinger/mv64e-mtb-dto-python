@@ -1,0 +1,22 @@
+from enum import Enum
+
+class MtbTherapyStatusReasonCodingCode(str, Enum):
+    BEST_SUPPORTIVE_CARE = "best-supportive-care"
+    CHRONIC_REMISSION = "chronic-remission"
+    DETERIORATION = "deterioration"
+    LOST_TO_FU = "lost-to-fu"
+    MEDICAL_REASONS = "medical-reasons"
+    NO_INDICATION = "no-indication"
+    OTHER = "other"
+    OTHER_THERAPY_CHOSEN = "other-therapy-chosen"
+    PATIENT_DEATH = "patient-death"
+    PATIENT_REFUSAL = "patient-refusal"
+    PATIENT_WISH = "patient-wish"
+    PAYMENT_ENDED = "payment-ended"
+    PAYMENT_PENDING = "payment-pending"
+    PAYMENT_REFUSED = "payment-refused"
+    PROGRESSION = "progression"
+    REGULAR_COMPLETION = "regular-completion"
+    REGULAR_COMPLETION_WITH_DOSAGE_REDUCTION = "regular-completion-with-dosage-reduction"
+    REGULAR_COMPLETION_WITH_SUBSTANCE_CHANGE = "regular-completion-with-substance-change"
+    TOXICITY = "toxicity"
